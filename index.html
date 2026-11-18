@@ -3,224 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홍정환 ♥ 정승희 모바일 청첩장</title>
+    <title>홍정환 · 정승희 결혼합니다</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Noto Sans KR"', 'sans-serif'],
-                        serif: ['"Gowun Batang"', 'serif'],
-                        eng: ['"Cormorant Garamond"', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body { font-family: 'Pretendard', sans-serif; background-color: #f7f5f0; }
+    </style>
 </head>
-<body class="bg-stone-200 text-stone-800 font-sans antialiased flex justify-center min-h-screen">
-    <main class="w-full max-w-[440px] min-h-screen shadow-2xl relative overflow-x-hidden" style="background-color: #FAF9F6;">
-        <!-- 커버 -->
-        <section class="w-full">
-            <div class="pt-10 pb-6 px-6 text-center">
-                <p class="font-eng italic text-sm tracking-[0.2em] text-stone-500 uppercase mb-1">THE MARRIAGE OF</p>
-                <h1 class="font-serif text-2xl tracking-[0.15em] font-normal text-stone-900">홍정환 &nbsp;·&nbsp; 정승희</h1>
-            </div>
-            <div class="px-6">
-                <div class="w-full aspect-[3/4] rounded-t-full overflow-hidden shadow-md bg-stone-200">
-                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85" alt="웨딩 메인 사진" class="w-full h-full object-cover grayscale contrast-105">
-                </div>
-            </div>
-            <div class="py-9 px-6 text-center">
-                <p class="font-serif text-sm tracking-widest text-stone-700 mb-1.5">2026년 10월 8일 목요일 오후 2시</p>
-                <p class="font-serif text-xs tracking-wider text-stone-500">더 채플 앳 청담 6층 채플홀</p>
-            </div>
-        </section>
+<body class="flex justify-center bg-stone-100 min-h-screen">
 
-        <div class="flex justify-center my-1"><div class="w-px h-10 bg-stone-300"></div></div>
+    <!-- 모바일 청첩장 컨테이너 (스마트폰 비율) -->
+    <main class="w-full max-w-[480px] bg-[#FDFBF7] shadow-xl min-h-screen flex flex-col text-stone-800">
 
-        <!-- 모시는 글 -->
-        <section class="py-10 px-7 text-center">
-            <p class="font-eng italic text-xs tracking-[0.25em] text-stone-400 uppercase mb-2">INVITATION</p>
-            <h2 class="font-serif text-lg text-stone-900 mb-6 font-normal">소중한 분들을 초대합니다</h2>
-            <p class="font-serif text-[14px] leading-[2.1] text-stone-600 whitespace-pre-line break-keep">서로가 마주보며 다져온 사랑을
-이제 함께 한 곳을 바라보며
-걸어갈 수 있는 큰 사랑으로 키우고자 합니다.
+        <!-- 1. 커버 메인 사진 (보내주신 아치형 흑백 화보) -->
+        <div class="relative w-full aspect-[3/4] bg-stone-200 overflow-hidden">
+            <img src="S_261008_홍정환 정승희_LCH_0056.jpg" alt="웨딩 커버 사진" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex flex-col justify-end p-8 text-white text-center">
+                <p class="text-xs tracking-[0.3em] uppercase mb-2 text-stone-200">Wedding Invitation</p>
+                <h1 class="text-3xl font-serif font-medium tracking-wide">홍정환 · 정승희</h1>
+                <p class="text-sm tracking-wider mt-2 text-stone-300">2026.10.08 WED PM 2:00</p>
+            </div>
+        </div>
 
-저희 두 사람이 사랑의 이름으로
-지켜나갈 수 있게 앞날을
-축복해 주시면 감사하겠습니다.</p>
-            <div class="mt-10 pt-8 border-t border-stone-200/80 space-y-2.5 font-serif text-sm text-stone-800">
-                <div class="flex items-center justify-center gap-2">
-                    <span class="text-stone-600">홍길동 · 김영희</span>
-                    <span class="text-xs text-stone-400">의 아들</span>
-                    <span class="font-semibold text-stone-900">정환</span>
-                </div>
-                <div class="flex items-center justify-center gap-2">
-                    <span class="text-stone-600">정철수 · 박미숙</span>
-                    <span class="text-xs text-stone-400">의 딸</span>
-                    <span class="font-semibold text-stone-900">승희</span>
-                </div>
+        <!-- 2. 모시는 글 -->
+        <section class="px-8 py-14 text-center">
+            <h2 class="text-sm font-semibold tracking-widest text-stone-400 mb-6 uppercase">Invitation</h2>
+            <p class="text-stone-600 leading-relaxed text-sm space-y-2">
+                소중한 분들을 모십니다.<br>
+                두 사람이 사랑과 믿음으로 한 가정을 이루어<br>
+                새로운 출발을 시작하려 합니다.<br><br>
+                따뜻한 축복으로 자리를 빛내주시면<br>
+                더 없는 기쁨으로 간직하겠습니다.
+            </p>
+            
+            <div class="mt-8 text-stone-800 font-medium text-sm space-y-1">
+                <p><span class="text-stone-400 text-xs mr-2">신랑</span> 홍정환</p>
+                <p><span class="text-stone-400 text-xs mr-2">신부</span> 정승희</p>
             </div>
         </section>
 
-        <!-- 웨딩 갤러리 -->
-        
-        <section class="py-10 px-5 bg-white/80 border-t border-stone-200/60 text-center">
-            <p class="font-eng italic text-xs tracking-[0.25em] text-stone-400 uppercase mb-2">GALLERY</p>
-            <h2 class="font-serif text-lg text-stone-900 mb-2 font-normal">우리의 순간들</h2>
-            <p class="text-[11px] text-stone-400 mb-6">사진을 터치하시면 크게 보실 수 있습니다</p>
-            <div id="gallery-view"></div>
-        </section>
+        <hr class="border-stone-200 mx-8">
 
-        <!-- 달력 및 D-Day -->
-        <section class="py-10 px-6 bg-white/50 border-y border-stone-200/60 text-center">
-            <p id="cal-month" class="font-eng text-2xl tracking-widest text-stone-800 mb-1"></p>
-            <p id="cal-sub" class="font-serif text-xs text-stone-500 mb-6"></p>
-            <div class="max-w-[270px] mx-auto font-serif text-xs">
-                <div class="grid grid-cols-7 gap-1 text-stone-400 mb-2 pb-2 border-b border-stone-200">
-                    <span class="text-rose-400">일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+        <!-- 3. 웨딩 갤러리 -->
+        <section class="px-6 py-12">
+            <h2 class="text-center text-sm font-semibold tracking-widest text-stone-400 mb-8 uppercase">Gallery</h2>
+            <div class="grid grid-cols-3 gap-2">
+                <div class="aspect-square bg-stone-200 overflow-hidden rounded cursor-pointer" onclick="openLightbox('S_261008_홍정환 정승희_LCH_0056.jpg')">
+                    <img src="S_261008_홍정환 정승희_LCH_0056.jpg" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                 </div>
-                <div id="calendar-grid" class="grid grid-cols-7 gap-y-2 gap-x-1 text-stone-700"></div>
-            </div>
-            <div class="mt-6 pt-4 border-t border-stone-200/60">
-                <p id="dday-text" class="font-serif text-xs text-stone-600"></p>
+                <!-- 추가 갤러리 사진 슬롯 예시 -->
+                <div class="aspect-square bg-stone-200 flex items-center justify-center text-xs text-stone-400 rounded">추가 사진</div>
+                <div class="aspect-square bg-stone-200 flex items-center justify-center text-xs text-stone-400 rounded">추가 사진</div>
             </div>
         </section>
 
-        <!-- 오시는 길 -->
-        <section class="py-10 px-6 text-center">
-            <p class="font-eng italic text-xs tracking-[0.25em] text-stone-400 uppercase mb-2">LOCATION</p>
-            <h2 class="font-serif text-lg text-stone-900 mb-4 font-normal">오시는 길</h2>
-            <p class="font-serif font-semibold text-base text-stone-900 mb-1">더 채플 앳 청담 6층 채플홀</p>
-            <p class="text-xs text-stone-500 mb-5">서울특별시 강남구 선릉로 757</p>
-            <div class="text-left bg-white/80 rounded-xl p-4 border border-stone-200/60 space-y-2.5 text-xs">
-                <div>
-                    <span class="font-semibold text-stone-800 block mb-0.5"><i class="fa-solid fa-train-subway mr-1.5 text-stone-500"></i>지하철 안내</span>
-                    <p class="text-stone-600 leading-relaxed">7호선/수인분당선 강남구청역 3-1번 출구 도보 5분</p>
-                </div>
-                <div class="pt-2 border-t border-stone-100">
-                    <span class="font-semibold text-stone-800 block mb-0.5"><i class="fa-solid fa-car mr-1.5 text-stone-500"></i>주차 안내</span>
-                    <p class="text-stone-600 leading-relaxed">건물 내 지하 주차장 이용 (2시간 무료 주차 지원)</p>
-                </div>
+        <!-- 4. 예식 일시 및 장소 -->
+        <section class="bg-stone-50 px-8 py-10 text-center border-y border-stone-200">
+            <h2 class="text-sm font-semibold tracking-widest text-stone-400 mb-4 uppercase">Location</h2>
+            <p class="text-base font-medium text-stone-800 mb-1">더 채플 웨딩홀</p>
+            <p class="text-xs text-stone-500 mb-6">서울시 강남구 예식로 123 (본관 3층 채플홀)</p>
+            <div class="text-xs bg-white py-2 px-4 rounded-full border border-stone-200 inline-block text-stone-600">
+                ⏰ 2026년 10월 8일 수요일 오후 2시
             </div>
         </section>
 
-        <!-- 마음 전하실 곳 -->
-        <section class="py-10 px-6 bg-white/70 border-t border-stone-200/60 text-center">
-            <p class="font-eng italic text-xs tracking-[0.25em] text-stone-400 uppercase mb-2">ACCOUNT</p>
-            <h2 class="font-serif text-base text-stone-900 mb-2 font-normal">마음 전하실 곳</h2>
-            <p class="text-xs text-stone-500 mb-5">축하의 마음을 담아 축의금을 전달해 보세요.</p>
-            <div class="space-y-2.5 text-left">
-                <div class="border border-stone-200 rounded-xl bg-white overflow-hidden">
-                    <button onclick="document.getElementById('g-acc').classList.toggle('hidden')" class="w-full px-4 py-3 text-xs font-medium text-stone-800 flex items-center justify-between">
-                        <span>신랑측 계좌번호 보기</span><i class="fa-solid fa-chevron-down text-stone-400"></i>
-                    </button>
-                    <div id="g-acc" class="hidden px-4 py-3 bg-stone-50 border-t border-stone-100 text-xs flex items-center justify-between">
-                        <div>
-                            <p class="text-stone-500 mb-0.5">신한은행 (예금주: 홍정환)</p>
-                            <p class="font-mono font-semibold text-stone-800">110-123-456789</p>
-                        </div>
-                        <button onclick="copyText('110-123-456789')" class="px-2.5 py-1.5 bg-white border border-stone-300 rounded text-[11px] font-medium">복사</button>
-                    </div>
+        <!-- 5. 마음 전하실 곳 (계좌번호) -->
+        <section class="px-8 py-12 text-center">
+            <h2 class="text-sm font-semibold tracking-widest text-stone-400 mb-6 uppercase">Account</h2>
+            <details class="bg-stone-50 border border-stone-200 rounded-lg p-4 mb-3 text-left">
+                <summary class="cursor-pointer text-sm font-medium text-stone-700 flex justify-between items-center">
+                    <span>신랑 측 계좌번호 보기</span>
+                    <span class="text-xs text-stone-400">▼</span>
+                </summary>
+                <div class="mt-4 pt-3 border-t border-stone-200 text-xs text-stone-600 flex justify-between items-center">
+                    <span>KB국민 123456-04-123456 (홍정환)</span>
+                    <button onclick="navigator.clipboard.writeText('12345604123456'); alert('계좌번호가 복사되었습니다.');" class="bg-stone-800 text-white px-2.5 py-1 rounded">복사</button>
                 </div>
-                <div class="border border-stone-200 rounded-xl bg-white overflow-hidden">
-                    <button onclick="document.getElementById('b-acc').classList.toggle('hidden')" class="w-full px-4 py-3 text-xs font-medium text-stone-800 flex items-center justify-between">
-                        <span>신부측 계좌번호 보기</span><i class="fa-solid fa-chevron-down text-stone-400"></i>
-                    </button>
-                    <div id="b-acc" class="hidden px-4 py-3 bg-stone-50 border-t border-stone-100 text-xs flex items-center justify-between">
-                        <div>
-                            <p class="text-stone-500 mb-0.5">국민은행 (예금주: 정승희)</p>
-                            <p class="font-mono font-semibold text-stone-800">123401-04-123456</p>
-                        </div>
-                        <button onclick="copyText('123401-04-123456')" class="px-2.5 py-1.5 bg-white border border-stone-300 rounded text-[11px] font-medium">복사</button>
-                    </div>
-                </div>
-            </div>
+            </details>
         </section>
 
-        <footer class="py-8 px-6 text-center text-[11px] text-stone-400 font-eng tracking-widest">THANK YOU FOR CELEBRATING WITH US</footer>
+        <!-- 푸터 -->
+        <footer class="mt-auto py-8 text-center text-[11px] text-stone-400 bg-stone-100">
+            Thank You For Your Celebration
+        </footer>
+
     </main>
 
     <!-- 라이트박스 모달 -->
-    <div id="lightbox" class="hidden fixed inset-0 bg-black/95 z-50 flex flex-col justify-between p-4 text-white">
-        <div class="flex items-center justify-between max-w-lg w-full mx-auto pt-2">
-            <span id="lb-counter" class="text-xs font-mono text-stone-300"></span>
-            <button onclick="document.getElementById('lightbox').classList.add('hidden')" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <div class="relative flex-1 flex items-center justify-center max-w-lg w-full mx-auto my-4">
-            <img id="lb-img" src="" class="max-w-full max-h-[78vh] object-contain rounded-lg ">
-            <button onclick="navLb(-1)" class="absolute left-2 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center"><i class="fa-solid fa-chevron-left"></i></button>
-            <button onclick="navLb(1)" class="absolute right-2 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-        <p class="text-center text-xs text-stone-400 pb-4">좌우 버튼으로 사진을 넘겨보세요</p>
+    <div id="lightbox" class="fixed inset-0 bg-black/90 hidden z-50 flex items-center justify-center p-4" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain rounded">
     </div>
 
-    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-stone-900 text-white px-5 py-2.5 rounded-full text-xs opacity-0 transition-opacity pointer-events-none z-50">복사되었습니다.</div>
-
     <script>
-        const IMAGES = ["https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80","https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80","https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80","https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80","https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80","https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80"];
-        const LAYOUT = "grid";
-        const FILTER = "";
-        let slideIdx = 0, lbIdx = 0;
-
-        function renderGallery() {
-            const el = document.getElementById('gallery-view');
-            if (!el || !IMAGES.length) return;
-            if (LAYOUT === 'grid') {
-                el.innerHTML = '<div class="grid grid-cols-3 gap-1.5">' + IMAGES.map((src, i) => 
-                    `<button onclick="openLb(${i})" class="aspect-square overflow-hidden rounded-md bg-stone-100"><img src="${src}" class="w-full h-full object-cover ${FILTER}"></button>`
-                ).join('') + '</div>';
-            } else {
-                el.innerHTML = `<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-stone-100">
-                    <img src="${IMAGES[slideIdx]}" onclick="openLb(${slideIdx})" class="w-full h-full object-cover cursor-pointer ${FILTER}">
-                    <button onclick="moveSlide(-1)" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/85 text-stone-800 shadow flex items-center justify-center text-xs"><i class="fa-solid fa-chevron-left"></i></button>
-                    <button onclick="moveSlide(1)" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/85 text-stone-800 shadow flex items-center justify-center text-xs"><i class="fa-solid fa-chevron-right"></i></button>
-                    <div class="absolute bottom-2.5 right-2.5 px-2.5 py-0.5 rounded-full bg-black/55 text-white text-[10px] font-mono">${slideIdx + 1} / ${IMAGES.length}</div>
-                </div>`;
-            }
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.remove('hidden');
         }
-        function moveSlide(s) { slideIdx = (slideIdx + s + IMAGES.length) % IMAGES.length; renderGallery(); }
-        function openLb(i) { lbIdx = i; updateLb(); document.getElementById('lightbox').classList.remove('hidden'); }
-        function navLb(s) { lbIdx = (lbIdx + s + IMAGES.length) % IMAGES.length; updateLb(); }
-        function updateLb() {
-            document.getElementById('lb-img').src = IMAGES[lbIdx];
-            document.getElementById('lb-counter').textContent = (lbIdx + 1) + ' / ' + IMAGES.length;
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
         }
-        function copyText(txt) {
-            const t = document.createElement('textarea'); t.value = txt; document.body.appendChild(t); t.select();
-            document.execCommand('copy'); document.body.removeChild(t);
-            const toast = document.getElementById('toast'); toast.style.opacity = '1';
-            setTimeout(() => toast.style.opacity = '0', 2000);
-        }
-        // 달력 초기화
-        (function() {
-            const [y, m, d] = "2026-10-08".split('-').map(Number);
-            const daysKo = ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'];
-            const dt = new Date(y, m - 1, d);
-            document.getElementById('cal-month').textContent = y + '. ' + String(m).padStart(2, '0');
-            document.getElementById('cal-sub').textContent = daysKo[dt.getDay()] + ' 오후 2시';
-            const first = new Date(y, m - 1, 1).getDay(), last = new Date(y, m, 0).getDate();
-            const grid = document.getElementById('calendar-grid');
-            for (let i = 0; i < first; i++) grid.appendChild(document.createElement('span'));
-            for (let day = 1; day <= last; day++) {
-                const sp = document.createElement('span'); sp.textContent = day;
-                sp.className = 'w-7 h-7 mx-auto flex items-center justify-center rounded-full text-xs';
-                if (day === d) sp.classList.add('bg-stone-900', 'text-white', 'font-bold');
-                else if (new Date(y, m - 1, day).getDay() === 0) sp.classList.add('text-rose-400');
-                grid.appendChild(sp);
-            }
-            const today = new Date(); today.setHours(0,0,0,0);
-            const diff = Math.ceil((dt - today) / 86400000);
-            const badge = diff > 0 ? diff + '일 전' : (diff < 0 ? Math.abs(diff) + '일 지남' : 'D-Day');
-            document.getElementById('dday-text').innerHTML = '정환 ♥ 승희의 결혼식이 <span class="font-semibold text-stone-900 underline">' + badge + '</span> 입니다.';
-            renderGallery();
-        })();
     </script>
 </body>
 </html>
